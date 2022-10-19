@@ -4,12 +4,13 @@ if(isset($_GET['id'])){
     $query = mysqli_query($db,"SELECT * FROM menu WHERE id=$_GET[id]");
     $result = mysqli_fetch_assoc($query);
     $nama = $result['nama_menu'];
-    $regular = $result['regular'];
-    $large = $result['large'];
+    $tall = $result['tall'];
+    $grande = $result['grande'];
+    $venti = $result['venti'];
 }
 
 if(isset($_POST['submit'])){
-    $query = mysqli_query($db,"UPDATE menu SET nama_menu='$_POST[nama]',regular='$_POST[regular]',large='$_POST[large]' WHERE id=$_GET[id]");
+    $query = mysqli_query($db,"UPDATE menu SET nama_menu='$_POST[nama]',tall='$_POST[tall]',grande='$_POST[grande]',venti='$_POST[venti]' WHERE id=$_GET[id]");
     if($query){
         header("Location:admin.php");
     } else {
@@ -36,11 +37,14 @@ if(isset($_POST['submit'])){
             <label for="">Nama Menu</label><br>
             <input type="text" name="nama" class="form-text" value='<?=$nama?>'><br>
             
-            <label for="">Regular</label><br>
-            <input type="text" name="regular" class="form-text" value='<?=$regular?>'><br>
+            <label for="">Tall</label><br>
+            <input type="text" name="tall" class="form-text" value='<?=$tall?>'><br>
             
-            <label for="">Large</label><br>
-            <input type="text" name="large" class="form-text" value='<?=$large?>'><br>
+            <label for="">Grande</label><br>
+            <input type="text" name="grande" class="form-text" value='<?=$grande?>'><br>
+
+            <label for="">Venti</label><br>
+            <input type="text" name="venti" class="form-text" value='<?=$venti?>'><br>
         
             <input type="submit" name="submit" value="Kirim" class="btn-submit">
         </form>

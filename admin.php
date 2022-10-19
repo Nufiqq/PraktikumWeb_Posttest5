@@ -23,8 +23,9 @@
                 <tr>
                     <th>ID</th>
                     <th nowrap>Nama Menu</th>
-                    <th>Regular</th>
-                    <th>Large</th>
+                    <th>Tall</th>
+                    <th>Grande</th>
+                    <th>Venti</th>
                     <th colspan="2">Action</th>
                 </tr>
             </thead>
@@ -38,8 +39,9 @@
                     <tr>
                         <td><?= $i ?></td>
                         <td nowrap><?=$row['nama_menu']?></td>
-                        <td><?=$row['regular']?></td>
-                        <td><?=$row['large']?></td>
+                        <td><?=$row['tall']?></td>
+                        <td><?=$row['grande']?></td>
+                        <td><?=$row['venti']?></td>
                         <td class="edit">
                             <a href="edit.php?id=<?=$row['id']?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">

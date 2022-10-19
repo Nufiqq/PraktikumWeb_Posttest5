@@ -15,10 +15,12 @@
         <form action="add.php" method="post">
             <label for="">Nama Menu</label><br>
             <input type="text" name="nama" class="form-text"><br>
-            <label for="">Regular</label><br>
-            <input type="text" name="regular" class="form-text"><br>
-            <label for="">Large</label><br>
-            <input type="text" name="large" class="form-text"><br>
+            <label for="">Tall</label><br>
+            <input type="text" name="tall" class="form-text"><br>
+            <label for="">Grande</label><br>
+            <input type="text" name="grande" class="form-text"><br>
+            <label for="">Venti</label><br>
+            <input type="text" name="venti" class="form-text"><br>
             <input type="submit" name="submit" value="Kirim" class="btn-submit">
         </form>
     </div>
